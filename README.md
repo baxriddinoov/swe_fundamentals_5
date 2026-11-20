@@ -7,7 +7,7 @@
 **Student ID**: `240440`  
 **Email**: `baxriddinovakbarxon@gmail.com`  
 **GitHub Username**: `baxriddinoov`  
-**Repository**: `baxriddinoov/fundametals_of_software_engineering`  
+**Repository**: `https://github.com/baxriddinoov/swe_fundamentals_5`  
 
 ---
 

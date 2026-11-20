@@ -38,7 +38,7 @@ The starter codebase contained:
 ### Step 1: Baseline Git Repository
 - Initialized Git repository on `main` branch.
 - Configured committer identity: `baxriddinoov <250501@tmuni.org>`.
-- Added remote: `git@github.com:baxriddinoov/fundametals_of_software_engineering.git`.
+- Added remote: `git@github.com:baxriddinoov/swe_fundamentals_5.git`.
 - Committed baseline starter code: `Initial commit: starter files for CS360 Assignment 5`.
 
 ### Step 2: BUG-101 (Cascading Student Grade Deletion)
