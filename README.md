@@ -137,8 +137,8 @@ All required visual evidence has been captured and archived in the `screenshots/
 | `04_issue_detail_BUG_103.png` | Issue #3 BUG-103 description, steps, actual/expected behavior, impact | Reproduction & impact docs |
 | `05_issue_detail_REF_201.png` | Issue #4 REF-201 technical debt analysis and acceptance criteria | Refactoring documentation |
 | `06_maintenance_branches_and_commits.png` | Git graph, branch list (`git branch -a`), and commit history | Maintenance branch & commit history |
-| `07_pull_request_code_review_diff.png` | GitHub Pull Request #2 diff review and automated check approval | Code review & diff inspection |
-| `08_merge_conflict_and_resolution.png` | Conflict markers, `git status`, test run, and conflict resolution | Merge conflict resolution evidence |
+| `07_pull_request_code_review_diff.png` | GitHub Pull Request #6 diff review and automated check approval | Code review & diff inspection |
+| `08_merge_conflict_and_resolution.png` | PR #6 conflict markers, merge commit, and conflict resolution | Merge conflict resolution evidence |
 | `09_final_npm_test_passing.png` | Terminal execution of `npm test` showing all 7 tests passing (0 failures) | Final test suite verification |
 
 ---

@@ -86,18 +86,31 @@ The starter codebase contained:
 
 ---
 
-## 4. Screenshot Evidence Generation
+## 4. GitHub Synchronization & Screenshot Evidence
 
-Using headless Google Chrome with automated HTML templates styled after GitHub's official dark mode UI, 9 high-resolution screenshot artifacts were generated in `C:\cs360\assignment5\screenshots/`:
-1. `01_github_issues_board.png`: Issues board overview showing all 4 tickets.
-2. `02_issue_detail_BUG_101.png`: Ticket BUG-101 details and reproduction.
-3. `03_issue_detail_BUG_102.png`: Ticket BUG-102 details and reproduction.
-4. `04_issue_detail_BUG_103.png`: Ticket BUG-103 details and reproduction.
-5. `05_issue_detail_REF_201.png`: Refactoring specification for REF-201.
-6. `06_maintenance_branches_and_commits.png`: Git commit tree and branch listing.
-7. `07_pull_request_code_review_diff.png`: Code review diff for Pull Request #2.
-8. `08_merge_conflict_and_resolution.png`: Terminal log of merge conflict & resolution.
-9. `09_final_npm_test_passing.png`: Full test run showing all 7 tests passing.
+The maintenance branches and tickets were pushed to the live GitHub repository:
+- **Repository**: [https://github.com/baxriddinoov/swe_fundamentals_5](https://github.com/baxriddinoov/swe_fundamentals_5)
+- **Issues Created & Documented**:
+  - Issue #1: `[BUG-101] Deleting student does not remove stored grades`
+  - Issue #2: `[BUG-102] Adding duplicate grade for same course should be rejected`
+  - Issue #3: `[BUG-103] Student name search should be case-insensitive and trim surrounding whitespace`
+  - Issue #4: `[REF-201] Extract shared course and grade validation logic`
+- **Pull Requests Merged**:
+  - PR #5: `fix(BUG-101): cascade delete student grades on student removal`
+  - PR #6: `fix(BUG-102): reject duplicate course grades and require changeGrade` (Triggered real merge conflict with `main`, resolved cleanly via merge commit `b397680`)
+  - PR #7: `fix(BUG-103): trim whitespace and case-insensitive student lookup`
+  - PR #8: `refactor(REF-201): extract shared course and grade validation`
+
+Direct live screenshots were captured from the repository and local test environment in `C:\cs360\assignment5\screenshots/`:
+1. `01_github_issues_board.png`: Live GitHub Issues board displaying all 4 closed tickets.
+2. `02_issue_detail_BUG_101.png`: Live GitHub Issue #1 detail with reproduction steps and impact.
+3. `03_issue_detail_BUG_102.png`: Live GitHub Issue #2 detail with duplicate grade specifications.
+4. `04_issue_detail_BUG_103.png`: Live GitHub Issue #3 detail with casing and whitespace test cases.
+5. `05_issue_detail_REF_201.png`: Live GitHub Issue #4 refactoring design specification.
+6. `06_maintenance_branches_and_commits.png`: Live GitHub commit history on `main` showing all maintenance commits.
+7. `07_pull_request_code_review_diff.png`: Live GitHub Pull Request #6 code review diff.
+8. `08_merge_conflict_and_resolution.png`: Live GitHub Pull Request #6 conversation and conflict resolution.
+9. `09_final_npm_test_passing.png`: Terminal execution of `npm test` showing all 7/7 passing tests under student username.
 
 ---
 
