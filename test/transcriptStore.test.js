@@ -54,4 +54,19 @@ describe("TranscriptStore", () => {
     assert.deepEqual(store.getStudentIDs(), [firstID]);
     assert.throws(() => store.deleteStudent(secondID), /Student not found/);
   });
+
+  test("BUG-101: deleting a student removes stored grades and subsequent grade requests fail", () => {
+    const studentID = store.addStudent("Ada");
+    store.addGrade(studentID, "CS360", 95);
+
+    assert.equal(store.getGrade(studentID, "CS360"), 95);
+
+    store.deleteStudent(studentID);
+
+    // After deleting the student, grade request for that student must fail (translates to 404 in server)
+    assert.throws(
+      () => store.getGrade(studentID, "CS360"),
+      /Student not found/,
+    );
+  });
 });
