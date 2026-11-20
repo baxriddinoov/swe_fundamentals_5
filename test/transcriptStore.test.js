@@ -85,4 +85,17 @@ describe("TranscriptStore", () => {
       grade: 92,
     });
   });
+
+  test("BUG-103: name search trims whitespace and is case-insensitive while keeping display name intact", () => {
+    const id = store.addStudent("Grace Lee");
+
+    assert.deepEqual(store.getStudentIDs("  Grace Lee  "), [id]);
+    assert.deepEqual(store.getStudentIDs("grace lee"), [id]);
+    assert.deepEqual(store.getStudentIDs("GRACE LEE"), [id]);
+    assert.deepEqual(store.getStudentIDs("  grACe LeE  "), [id]);
+
+    // verify stored display name is unchanged
+    const transcript = store.getTranscript(id);
+    assert.equal(transcript.student.studentName, "Grace Lee");
+  });
 });
